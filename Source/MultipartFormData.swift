@@ -552,7 +552,7 @@ open class MultipartFormData {
         if let fileName = fileName { disposition += "; filename=\"\(fileName)\"" }
 
         var headers = ["Content-Disposition": disposition]
-        if let mimeType = mimeType { headers["Content-Type"] = mimeType }
+//        if let mimeType = mimeType { headers["Content-Type"] = mimeType }
 
         return headers
     }
